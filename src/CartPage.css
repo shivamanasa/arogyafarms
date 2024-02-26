@@ -1,0 +1,79 @@
+/* CartPage.css */
+
+/* Container styling */
+.cart-container {
+    max-width: 100%;
+    margin: 80px auto; /* Center the cart container */
+    padding: 20px;
+  }
+  
+  /* List styling */
+  .cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    list-style: none;
+    gap: 20px   ;
+    
+  }
+  
+  /* Card styling */
+  .cart-card {
+    width: 200px; /* Set card width */
+    padding: 10px;
+    margin-bottom: 20px; /* Add margin between cards */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+
+  }
+  
+  /* Image styling */
+  .cart-card img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Item info styling */
+  .cart-item-info {
+    margin-top: 10px; /* Add space between image and text */
+  }
+  
+  .cart-item-info p {
+    margin: 5px 0; /* Add spacing between paragraphs */
+  }
+  
+  /* Action buttons styling */
+  .cart-actions {
+    display: flex;
+    justify-content: space-between; /* Align buttons evenly */
+    margin-top: 10px; /* Add space between buttons and text */
+  }
+  
+  /* Total price styling */
+  .cart-total {
+    margin-top: 20px; /* Add space between items and total price */
+    text-align: center; /* Align total price to the right */
+  }
+  
+  /* Final buy button styling */
+  .final-buy-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Add space between total price and button */
+  }
+  
+  .final-buy-button:hover {
+    background-color: #0056b3;
+  }
+  li{
+    list-style: none;
+
+  }

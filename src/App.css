@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  background-color: #fff; /* Ensure background color is set to prevent content behind navbar from showing through */
+  z-index: 1; /* Set a z-index to ensure cards appear above navbar */
+  
+}
+body{
+  background-color: black;
+}
+
+
+

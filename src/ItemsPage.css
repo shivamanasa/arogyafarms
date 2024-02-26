@@ -1,0 +1,110 @@
+/* ItemsPage.css */
+.container {
+    max-width: 100%;
+    margin: 0 auto 0; /* Adjusted top margin to create space for the navbar */
+    padding: 0px;
+    background-color: rgb(244, 246, 246);
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-container select,
+  .input-container input[type="text"] {
+    width: 100%;
+    max-width: 200px; /* Adjusted maximum width for better responsiveness */
+    padding: 10px;
+    margin-right: 10px; /* Added margin between select and input */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 5px;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+   
+    text-align: center;
+    background-color: #fff; /* Ensure background color is set to prevent content behind navbar from showing through */
+    z-index: 1; /* Set a z-index to ensure cards appear above navbar */
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: 155px;
+  }
+  
+  .card p {
+    margin: 10px 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ccc;
+  }
+  
+  button:active {
+    transform: translateY(1px); /* Add slight downward movement when button is clicked */
+  }
+  
+/* ItemsPage.css */
+
+.carousel-container{
+  margin-top: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+.carousel-container h3{
+ text-align: left;
+ color: black;
+ font-size: 2rem;
+ width: 50%;
+ margin-bottom: 10%;
+}
+@media(max-width:480px){
+  .carousel-container h3{
+    text-align: left;
+    color: black;
+    font-size: 2rem;
+    width: 50%;
+    margin-bottom: 10%;
+   }
+}
+.card {
+  position: relative; /* Make the card a positioning context */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.favorite-icon {
+  position: absolute; /* Position the heart icon */
+  top: 5px; /* Adjust the top position */
+  right: 5px; /* Adjust the right position */
+  cursor: pointer;
+  color: red; /* Default color */
+  font-size: 20px;
+}
+
+.favorite-icon:hover {
+  color: red; /* Red color when hovered */
+}
+.star {
+  font-size: 20px;
+  color: #FFD700; /* Yellow color */
+}

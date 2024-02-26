@@ -1,0 +1,117 @@
+/* Default styles for desktop */
+.payment-container {
+    display: flex;
+  }
+  
+  .customer-details,
+  .order-summary,
+  .payment-options {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .customer-details,
+  .payment-options {
+    border-right: 1px solid #ccc;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .payment-methods button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .payment-methods button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media query for mobile devices */
+  @media only screen and (max-width: 600px) {
+    .payment-container {
+      flex-direction: column;
+    }
+    .customer-details,
+    .order-summary,
+    .payment-options {
+      padding: 10px;
+    }
+    .customer-details,
+    .payment-options {
+      border: none;
+    }
+  }
+
+
+/* PaymentPage.css */
+.form-group input,
+.form-group textarea {
+  border: 1px solid red; /* Default border color */
+}
+
+.form-group.valid input,
+.form-group.valid textarea {
+  border-color: green; /* Valid input border color */
+}
+/* PaymentPage.css */
+
+/* Existing styles for payment container and customer details */
+
+.order-summary {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.order-summary h2 {
+  margin-bottom: 10px;
+}
+
+.order-summary ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-summary ul li {
+  margin-bottom: 5px;
+}
+
+.order-summary table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.order-summary th,
+.order-summary td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.order-summary th {
+  background-color: #f2f2f2;
+}
+
+.payment-options {
+  /* Existing styles for payment options */
+}
